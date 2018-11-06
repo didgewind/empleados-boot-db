@@ -1,0 +1,13 @@
+Esta versión tira de spring boot 2.0. Servidor rest que simula una base de datos de empleados mediante un mapa
+y un objeto Empleado del modelo. No está protegida. El DELETE implementa control de errores.
+
+Implementamos una única clase que hace de server y controlador Rest que funciona con JSON y XML.
+	
+		- GET: devuelve todos los empleados
+		- GET /x: devuelve el empleado con cif x
+		- PUT: inserta un empleado
+		- DELETE /x: elimina el empleado con cif x
+		- POST /x: modifica un empleado
+		
+	  Trabaja con Json y xml porque Spring detecta las librerías Jackson en el path y 
+	  utiliza httpmessageconverters.
